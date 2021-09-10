@@ -58,3 +58,7 @@ async function transitionRGB(variable, target, seconds = 1000, steps = 10)
  
  await transitionRGB( '--color-1', [ 210, 52, 243 ] );
  ```
+
+ ## Demo
+
+ https://imgur.com/a/O2cofry
