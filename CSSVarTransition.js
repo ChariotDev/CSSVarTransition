@@ -1,7 +1,8 @@
 
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
-async function transitionRGB(variable, target, seconds = 1000, steps = 10) {
+async function transitionRGB(variable, target, duration = 1000, steps = 10) {
+
     const rgb = getComputedStyle(document.documentElement)
         .getPropertyValue(variable)
         .split(",")
@@ -20,14 +21,14 @@ async function transitionRGB(variable, target, seconds = 1000, steps = 10) {
     const redTarg = target[0];
     const greenTarg = target[1];
     const blueTarg = target[2];
-    const stepTime = seconds / steps;
-    console.log(stepTime)
+    const stepDuration = duration / steps;
+
     let loops = 0;
+    
     const redStep = Math.floor((redTarg - red) / steps)
     const greenStep = Math.floor((greenTarg - green) / steps)
     const blueStep = Math.floor((blueTarg - blue) / steps)
 
-    console.log(redStep)
 
     while (loops < steps) {
         loops += 1
@@ -37,7 +38,7 @@ async function transitionRGB(variable, target, seconds = 1000, steps = 10) {
         document.body.style.setProperty(
             variable, `${red}, ${green}, ${blue}`
         );
-        await delay(stepTime);
+        await delay(stepDuration);
     }
 
     document.body.style.setProperty(
