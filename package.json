@@ -1,6 +1,6 @@
 {
   "name": "cssvartransition",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "RGB transitions for CSS Variables",
   "main": "CSSVarTransition.js",
   "scripts": {

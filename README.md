@@ -54,7 +54,7 @@ async function transitionRGB(variable, target, seconds = 1000, steps = 10)
  ```js
  # /main.js
   
- import { transitionRGB } from "cssvartransition";
+ import transitionRGB from "cssvartransition";
  
  await transitionRGB( '--color-1', [ 210, 52, 243 ] );
  ```
