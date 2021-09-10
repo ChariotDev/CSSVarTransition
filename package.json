@@ -1,0 +1,32 @@
+{
+  "name": "cssvartransition",
+  "version": "1.0.0",
+  "description": "RGB transitions for CSS Variables",
+  "main": "CSSVarTransition.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChariotDev/CssVarTransition.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "node",
+    "rgb",
+    "transition",
+    "style",
+    "stylesheet",
+    "background",
+    "transition",
+    "gradient",
+    "transition"
+  ],
+  "author": "Jody Doolittle (Chariot Development)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChariotDev/CssVarTransition/issues"
+  },
+  "homepage": "https://github.com/ChariotDev/CssVarTransition#readme"
+}
