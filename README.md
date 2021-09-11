@@ -52,7 +52,7 @@ async function transitionRGB(variable, target, seconds = 1000, steps = 10)
  ```
  
  ```js
- # /main.js
+ // /main.js
   
  import transitionRGB from "cssvartransition";
  
